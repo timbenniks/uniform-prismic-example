@@ -7,8 +7,9 @@ function mapIntents(intents) {
       id: intent.id,
       title: intent.name,
       description: intent.description,
-      image_url: false,
-      last_update: false,
+      image_url:
+        'https://pbs.twimg.com/profile_images/1235674864649830400/kd3pN6iU_400x400.jpg',
+      last_update: Date.now(),
       blob: {
         [intent.id]: {
           str: intent.signals[0].str,
