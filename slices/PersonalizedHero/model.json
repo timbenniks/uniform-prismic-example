@@ -1,0 +1,18 @@
+{
+  "id": "personalized_hero",
+  "type": "PersonalizedHero",
+  "description": "A wrapper slice for hero banners",
+  "icon": "account_circle",
+  "display": "list",
+  "non-repeat": {},
+  "repeat": {
+    "uniform_personalization_options": {
+      "type": "Link",
+      "config": {
+        "select": "document",
+        "customtypes": ["hero"],
+        "label": "Hero Options"
+      }
+    }
+  }
+}

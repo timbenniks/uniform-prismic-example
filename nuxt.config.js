@@ -19,14 +19,6 @@ export default {
       '@nuxtjs/prismic',
       {
         endpoint: 'https://uniform-integration.cdn.prismic.io/api/v2',
-        apiOptions: {
-          routes: [
-            {
-              type: 'page',
-              path: '/:uid',
-            },
-          ],
-        },
       },
     ],
     ['nuxt-sm'],
