@@ -8,9 +8,11 @@
     "ci:build": "run-s generate:intents export",
     "dev": "run-s generate:intents dev:nuxt",
     "dev:nuxt": "nuxt",
+    "generate:nuxt": "nuxt generate",
     "export": "cross-env NUXT_BUILD_TARGET=static nuxt generate",
     "generate:intents": "uniform optimize manifest download --output ./static/intentManifest.json --apiKey $UNIFORM_API_KEY",
-    "start": "nuxt start"
+    "start": "nuxt start",
+    "generate": "run-s generate:intents generate:nuxt"
   },
   "dependencies": {
     "@analytics/google-analytics": "^0.5.3",
