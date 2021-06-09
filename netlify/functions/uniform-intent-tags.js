@@ -12,7 +12,6 @@ function mapIntents(intents) {
       last_update: Date.now(),
       blob: {
         [intent.id]: {
-          id: intent.id,
           str: intent.signals[0].str,
         },
       },

@@ -1,0 +1,41 @@
+{
+  "id": "hero",
+  "type": "Hero",
+  "description": "A hero banner",
+  "icon": "broken_image",
+  "display": "list",
+  "non-repeat": {
+    "title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1",
+        "label": "Title"
+      }
+    },
+    "description": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph",
+        "allowTargetBlank": true,
+        "label": "Description"
+      }
+    },
+    "image": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Image"
+      }
+    },
+    "uniform_intent_tag": {
+      "type": "Link",
+      "config": {
+        "select": "document",
+        "customtypes": ["uniform_intent_tag"],
+        "label": "Uniform Intent Tag"
+      }
+    }
+  },
+  "repeat": {}
+}

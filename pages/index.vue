@@ -1,11 +1,19 @@
 <template>
-  <slice-zone
-    type="page"
-    uid="home"
-    :params="{
-      fetchLinks: links,
-    }"
-  />
+  <div class="page">
+    <ul class="mb-8">
+      <li><nuxt-link to="/">Home page</nuxt-link></li>
+      <li><nuxt-link to="/developer">Developers page</nuxt-link></li>
+      <li><nuxt-link to="/marketer">Marketers page</nuxt-link></li>
+    </ul>
+
+    <slice-zone
+      type="page"
+      uid="home"
+      :params="{
+        fetchLinks: links,
+      }"
+    />
+  </div>
 </template>
 
 <script>
@@ -19,18 +27,28 @@ export default {
       links: `hero.title,
         hero.description,
         hero.image,
-        hero.uniform_intent_tag,
-        uniform_intent_tag.intent_tag_title,
-        uniform_intent_tag.intent_tag,
-        uniform_intent_tag.nobeh,
-        uniform_intent_tag.bahvior_strength,
-        uniform_intent_tag.threshold,
-        uniform_intent_tag.nopn,
-        uniform_intent_tag.override`,
+        hero.intent_tag`,
     }
   },
   head: {
     title: 'Uniform',
+  },
+  watch: {
+    '$route.query'() {
+      this.reevaluateSignals()
+    },
+  },
+  mounted() {
+    this.$nextTick(() => {
+      this.reevaluateSignals()
+    })
+  },
+  methods: {
+    reevaluateSignals() {
+      if (!this.$uniformOptimizeContext.trackerInitializing) {
+        this.$uniformOptimizeContext.tracker.reevaluateSignals()
+      }
+    },
   },
 }
 </script>
