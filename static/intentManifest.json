@@ -6,18 +6,6 @@
         "id": "dev",
         "signals": [
           {
-            "type": "QS",
-            "freq": "visit",
-            "scope": "visitor",
-            "str": 50,
-            "value": {
-              "cs": false,
-              "expr": "fff",
-              "type": "exact"
-            },
-            "parameter": "fff"
-          },
-          {
             "type": "BEH",
             "freq": "always",
             "scope": "visitor",
@@ -33,40 +21,6 @@
             "freq": "always",
             "scope": "visitor",
             "str": 50
-          }
-        ]
-      },
-      {
-        "id": "cfp_utm",
-        "signals": [
-          {
-            "type": "QS",
-            "freq": "visit",
-            "scope": "visitor",
-            "str": 25,
-            "value": {
-              "cs": true,
-              "expr": "unfrmconf",
-              "type": "exact"
-            },
-            "parameter": "utm_campaign"
-          }
-        ]
-      },
-      {
-        "id": "registration",
-        "signals": [
-          {
-            "type": "CK",
-            "freq": "visit",
-            "scope": "visit",
-            "str": 100,
-            "value": {
-              "cs": true,
-              "expr": "true",
-              "type": "exact"
-            },
-            "parameter": "unfrmconf_registered"
           }
         ]
       }
