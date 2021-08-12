@@ -23,7 +23,7 @@ exports.handler = async (event, context) => {
   const res = await fetch('https://uniform.app/api/v1/preview', {
     method: 'post',
     headers: {
-      'x-api-key': '3e8230ff-bb65-4736-9adb-fa0910ad909e',
+      'x-api-key': '77f7b1fe-7a74-4870-9b7b-a2efcda9adf9',
     },
   })
 
