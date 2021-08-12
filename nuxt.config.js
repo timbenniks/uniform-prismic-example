@@ -23,7 +23,7 @@ export default {
     ],
     ['nuxt-sm'],
     'cookie-universal-nuxt',
-    '~/modules/uniform/optimize/initialize.js',
+    '@uniformdev/optimize-nuxt',
   ],
   build: {
     transpile: ['vue-slicezone', 'nuxt-sm'],

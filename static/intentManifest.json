@@ -6,6 +6,18 @@
         "id": "dev",
         "signals": [
           {
+            "type": "QS",
+            "freq": "visit",
+            "scope": "visitor",
+            "str": 50,
+            "value": {
+              "cs": false,
+              "expr": "fff",
+              "type": "exact"
+            },
+            "parameter": "fff"
+          },
+          {
             "type": "BEH",
             "freq": "always",
             "scope": "visitor",
@@ -61,13 +73,10 @@
     ],
     "enrichments": [
       {
-        "name": "Sweatshirts"
-      },
-      {
         "name": "Frameworks"
       },
       {
-        "name": "hoodies"
+        "name": "Hoodies"
       }
     ],
     "tests": [

@@ -20,6 +20,7 @@
     "@nuxtjs/prismic": "^1.3.1",
     "@nuxtjs/pwa": "^3.3.5",
     "@uniformdev/cli": "^8.0.1",
+    "@uniformdev/optimize-nuxt": "^10.0.0",
     "@uniformdev/optimize-tracker": "^8.0.1",
     "@uniformdev/optimize-tracker-analytics": "^8.0.1",
     "@uniformdev/optimize-tracker-browser": "^8.0.1",

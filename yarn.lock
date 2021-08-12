@@ -1906,17 +1906,44 @@
     node-fetch "^2.6.1"
     yargs "^17.0.1"
 
+"@uniformdev/optimize-common@^10.0.0":
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/optimize-common/-/optimize-common-10.0.0.tgz#2c167c4f7a01e34c9a860504966e346102fabbd9"
+  integrity sha512-TX34OHvJd/+d00WX4hzWN+JPGohvagBjPzhQCcMZQkHbeWODyHu9rb+ZkAvrYf+szS8e1WcNTSdWTPwhEPVkuQ==
+
 "@uniformdev/optimize-common@^8.0.1":
   version "8.0.1"
   resolved "https://registry.yarnpkg.com/@uniformdev/optimize-common/-/optimize-common-8.0.1.tgz#120f956112cc842de190021bd6a7bcff0338c5b5"
   integrity sha512-GvhEtZfx3EIcAbyDhTm0vIEOZPi7dm+M/dG2WvYUBI1w5mdC60Vd17Ghsed3Vh/ATusofNFY+8EWY0WITV2GJA==
 
-"@uniformdev/optimize-tracker-analytics@^8.0.1":
+"@uniformdev/optimize-nuxt@^10.0.0":
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/optimize-nuxt/-/optimize-nuxt-10.0.0.tgz#2e15ff285327d405fabf556e5456356a1bcb2a17"
+  integrity sha512-c7Yk0s05cBSh03kYxGqHG9tZFwSjdNa1mPEAEdeTH68h4rGX8Dk6Bk5dPMXBJetfKgZMttGP8HC/e1W+wFB1mg==
+  dependencies:
+    "@uniformdev/optimize-tracker-analytics" "8.0.1"
+    "@uniformdev/optimize-tracker-browser" "^10.0.0"
+    "@uniformdev/optimize-tracker-storage-indexeddb" "^10.0.0"
+    "@uniformdev/optimize-tracker-vue" "^10.0.0"
+    cookie-universal "^2.1.5"
+    defu "^5.0.0"
+
+"@uniformdev/optimize-tracker-analytics@8.0.1", "@uniformdev/optimize-tracker-analytics@^8.0.1":
   version "8.0.1"
   resolved "https://registry.yarnpkg.com/@uniformdev/optimize-tracker-analytics/-/optimize-tracker-analytics-8.0.1.tgz#20532f97005d18ff7f7b98e0a0e6b2bf9f405da5"
   integrity sha512-O+ddWaLkoFCoScO6FodqSUYPMlZ/GfB9wURLyRq3j6Xc+Iyxg2WbOd5G/K7osLrYijw9lcXKmGg7Qy1htkmrEw==
   dependencies:
     "@uniformdev/optimize-tracker-common" "^8.0.1"
+
+"@uniformdev/optimize-tracker-browser@^10.0.0":
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/optimize-tracker-browser/-/optimize-tracker-browser-10.0.0.tgz#091b0c6e649d3eeb26fb76553e8f1ec2b91faae4"
+  integrity sha512-ls2VT7VJ8Tqf4gDWrwzRetdsFgFTX6ThO4sMYR1zPSUNHO1NGriK/UKgr84+o1OlblmIlTfnwix1GD2iEmwCcA==
+  dependencies:
+    "@uniformdev/optimize-common" "^10.0.0"
+    "@uniformdev/optimize-tracker" "^10.0.0"
+    "@uniformdev/optimize-tracker-common" "^10.0.0"
+    "@uniformdev/optimize-tracker-storage-indexeddb" "^10.0.0"
 
 "@uniformdev/optimize-tracker-browser@^8.0.1":
   version "8.0.1"
@@ -1928,12 +1955,28 @@
     "@uniformdev/optimize-tracker-common" "^8.0.1"
     "@uniformdev/optimize-tracker-storage-indexeddb" "^8.0.1"
 
+"@uniformdev/optimize-tracker-common@^10.0.0":
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/optimize-tracker-common/-/optimize-tracker-common-10.0.0.tgz#d0c05c3d53cffbafe2f14a5c4fc4927c131b3b58"
+  integrity sha512-c06flMnpFtnIXRZ33+zLx2OKY0NCn6LQD5Na4HA8ifTMJLtnIjm45JbFPslPbsiTpcXOH/ltOVE8obNlZurJNw==
+  dependencies:
+    "@uniformdev/optimize-common" "^10.0.0"
+
 "@uniformdev/optimize-tracker-common@^8.0.1":
   version "8.0.1"
   resolved "https://registry.yarnpkg.com/@uniformdev/optimize-tracker-common/-/optimize-tracker-common-8.0.1.tgz#6345236dcbdd976628bd4d400998c473521cefd2"
   integrity sha512-p92X1xHhN8TNU0VN9DYQ9oITGj/sZEge9cDxVgH9Ify765VOqUYrD8grZ7OYuj/kIwQzGuqsxYWkhkv8wxr1pg==
   dependencies:
     "@uniformdev/optimize-common" "^8.0.1"
+
+"@uniformdev/optimize-tracker-storage-indexeddb@^10.0.0":
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/optimize-tracker-storage-indexeddb/-/optimize-tracker-storage-indexeddb-10.0.0.tgz#ae8ae825cacc91330684ab4108922305305fddc5"
+  integrity sha512-7Ia7C/fd9L4Ccfo4cy5s+MMhXNkbLUPuJ0UHxojYXwL/GOf29jPN6Y5wvUXX0rIIUuD9/euNa1MH+VafueTa4g==
+  dependencies:
+    "@uniformdev/optimize-tracker" "^10.0.0"
+    "@uniformdev/optimize-tracker-common" "^10.0.0"
+    idb "^6.1.2"
 
 "@uniformdev/optimize-tracker-storage-indexeddb@^8.0.1":
   version "8.0.1"
@@ -1944,6 +1987,15 @@
     "@uniformdev/optimize-tracker-common" "^8.0.1"
     idb "^6.0.0"
 
+"@uniformdev/optimize-tracker-vue@^10.0.0":
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/optimize-tracker-vue/-/optimize-tracker-vue-10.0.0.tgz#835c97c93bf21a7883f21c81620b8381447d1ea8"
+  integrity sha512-inKUsRC5oEbAHYBO1f0ki0DKYR2wcqJXmfxYurpfRwLFmAcwoKmASeJ22hQNXmoCe55F4qwJJbEqB0o7T0av1w==
+  dependencies:
+    "@uniformdev/optimize-common" "^10.0.0"
+    "@uniformdev/optimize-tracker" "^10.0.0"
+    "@uniformdev/optimize-tracker-browser" "^10.0.0"
+
 "@uniformdev/optimize-tracker-vue@^8.0.1":
   version "8.0.1"
   resolved "https://registry.yarnpkg.com/@uniformdev/optimize-tracker-vue/-/optimize-tracker-vue-8.0.1.tgz#1eafc969c7f5745e58c35c8741f226d0ed93d301"
@@ -1952,6 +2004,15 @@
     "@uniformdev/optimize-common" "^8.0.1"
     "@uniformdev/optimize-tracker" "^8.0.1"
     "@uniformdev/optimize-tracker-browser" "^8.0.1"
+
+"@uniformdev/optimize-tracker@^10.0.0":
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/@uniformdev/optimize-tracker/-/optimize-tracker-10.0.0.tgz#1f76950734ea8fe90038233dac67dc026f3d9193"
+  integrity sha512-Dt+DvBmCIlIywn2yjiu8hx/Qb468HrSPJGcaEgLJTPbUtK+krVKi+2oHRcfA7UtzMMt0PMeSxZu6FyoVkN058g==
+  dependencies:
+    "@uniformdev/optimize-common" "^10.0.0"
+    "@uniformdev/optimize-tracker-common" "^10.0.0"
+    uuid ">=7.0.0"
 
 "@uniformdev/optimize-tracker@^8.0.1":
   version "8.0.1"
@@ -3593,6 +3654,14 @@ cookie-universal@^2.1.4:
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/cookie-universal/-/cookie-universal-2.1.4.tgz#826a273da7eb9b08bfb0139bae12ea70770d564b"
   integrity sha512-dwWXs7NGBzaBYDypu3jWH5M3NJW+zu5QdyJkFMHJvhLuyL4/eXG4105fwtTDwfIqyTunwVvQX4PHdtfPDS7URQ==
+  dependencies:
+    "@types/cookie" "^0.3.3"
+    cookie "^0.4.0"
+
+cookie-universal@^2.1.5:
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/cookie-universal/-/cookie-universal-2.1.5.tgz#9a6cefbfb61c750a1b8ee2610bf71566bd719544"
+  integrity sha512-nqOOmEkovCQxNYGIyzhcwsmh4c7xnxe7RWdiYFOoml9MP4L32IlU3LdPC7r7nQEnnM+9Uxlk/UhtvBl5is6M/w==
   dependencies:
     "@types/cookie" "^0.3.3"
     cookie "^0.4.0"
@@ -5828,7 +5897,7 @@ icss-utils@^5.0.0, icss-utils@^5.1.0:
   resolved "https://registry.yarnpkg.com/icss-utils/-/icss-utils-5.1.0.tgz#c6be6858abd013d768e98366ae47e25d5887b1ae"
   integrity sha512-soFhflCVWLfRNOPU3iv5Z9VUdT44xFRbzjLsEzSr5AQmgqPMTHdU3PMT1Cf1ssx8fLNJDA1juftYl+PUcv3MqA==
 
-idb@^6.0.0:
+idb@^6.0.0, idb@^6.1.2:
   version "6.1.2"
   resolved "https://registry.yarnpkg.com/idb/-/idb-6.1.2.tgz#82ef5c951b8e1f47875d36ccafa4bedafc62f2f1"
   integrity sha512-1DNDVu3yDhAZkFDlJf0t7r+GLZ248F5pTAtA7V0oVG3yjmV125qZOx3g0XpAEkGZVYQiFDAsSOnGet2bhugc3w==
