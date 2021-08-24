@@ -1,4 +1,4 @@
-# uniform-prismic-poorman
+# uniform-prismic-example
 
 ## Build Setup
 
@@ -16,5 +16,10 @@ $ yarn start
 # generate static project
 $ yarn generate
 ```
+
+## Docs
+
+Find the Uniform docs [here](https://docs.uniform.app/optimize/dev).
+Note the `generate:intents` npm script.
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
