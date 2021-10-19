@@ -1,6 +1,6 @@
 <template>
   <div class="page m-12">
-    <GlobalNavigation />
+    <global-navigation />
 
     <slice-zone
       type="page"
@@ -38,11 +38,8 @@ export default {
     this.$nextTick(() => {
       this.reevaluateSignals()
     })
-
-    // console.log(
-    //   this.$uniformOptimizeContext.tracker.getIntentStrength('visitor')
-    // )
   },
+
   methods: {
     reevaluateSignals() {
       if (!this.$uniformOptimizeContext.trackerInitializing) {

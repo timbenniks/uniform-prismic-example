@@ -1,6 +1,6 @@
 <template>
-  <section class="hero">
-    <h1>{{ data.title[0].text }}</h1>
+  <section class="bg-green-100 rounded-xl p-4">
+    <h1 class="text-4xl">{{ data.title[0].text }}</h1>
     <p>{{ data.description[0].text }}</p>
     <img :src="data.image.url" width="200" />
   </section>
@@ -19,15 +19,3 @@ export default {
   },
 }
 </script>
-
-<style>
-.hero {
-  border-radius: 2rem;
-  background: #dedede;
-  padding: 1rem;
-}
-
-h1 {
-  font-size: 2rem;
-}
-</style>

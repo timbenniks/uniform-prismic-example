@@ -1,6 +1,6 @@
 <template>
   <div class="page m-12">
-    <GlobalNavigation />
+    <global-navigation />
 
     <slice-zone
       type="page"
