@@ -1,5 +1,5 @@
 <template>
-  <div class="page">
+  <div class="page m-12">
     <ul class="mb-8">
       <li><nuxt-link to="/">Home page</nuxt-link></li>
       <li><nuxt-link to="/developer">Developers page</nuxt-link></li>

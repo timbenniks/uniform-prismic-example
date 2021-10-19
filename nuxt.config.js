@@ -26,7 +26,6 @@ export default {
       },
     ],
     ['nuxt-sm'],
-    'cookie-universal-nuxt',
     '@uniformdev/optimize-nuxt',
   ],
   build: {

@@ -3,17 +3,6 @@
     "sampleSize": 0,
     "intents": [
       {
-        "id": "dev",
-        "signals": [
-          {
-            "type": "BEH",
-            "freq": "always",
-            "scope": "visitor",
-            "str": 50
-          }
-        ]
-      },
-      {
         "id": "marketer",
         "signals": [
           {
@@ -23,20 +12,20 @@
             "str": 50
           }
         ]
-      }
-    ],
-    "enrichments": [
-      {
-        "name": "Frameworks"
       },
       {
-        "name": "Hoodies"
+        "id": "developer",
+        "signals": [
+          {
+            "type": "BEH",
+            "freq": "always",
+            "scope": "visitor",
+            "str": 50
+          }
+        ]
       }
     ],
-    "tests": [
-      {
-        "name": "Why Attend Photo Location Test"
-      }
-    ]
+    "enrichments": [],
+    "tests": []
   }
 }

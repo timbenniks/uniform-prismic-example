@@ -1,5 +1,5 @@
 require('dotenv').config()
-const fetch = require('node-fetch')
+require('isomorphic-unfetch')
 
 function mapIntents(intents) {
   return intents.map((intent) => {
@@ -20,12 +20,15 @@ function mapIntents(intents) {
 }
 
 exports.handler = async (event, context) => {
-  const res = await fetch('https://uniform.app/api/v1/preview', {
-    method: 'post',
-    headers: {
-      'x-api-key': process.env.UNIFORM_API_KEY,
-    },
-  })
+  const res = await fetch(
+    `https://uniform.app/api/v1/manifest?preview=1&projectId=${process.env.UNIFORM_PROJECT_ID}`,
+    {
+      method: 'post',
+      headers: {
+        'x-api-key': process.env.UNIFORM_API_KEY,
+      },
+    }
+  )
 
   const data = await res.json()
 
