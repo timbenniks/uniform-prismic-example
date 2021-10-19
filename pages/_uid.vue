@@ -1,10 +1,6 @@
 <template>
   <div class="page m-12">
-    <ul class="mb-8">
-      <li><nuxt-link to="/">Home page</nuxt-link></li>
-      <li><nuxt-link to="/developer">Developers page</nuxt-link></li>
-      <li><nuxt-link to="/marketer">Marketers page</nuxt-link></li>
-    </ul>
+    <GlobalNavigation />
 
     <slice-zone
       type="page"

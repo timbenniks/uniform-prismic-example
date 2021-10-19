@@ -8,7 +8,7 @@ function mapIntents(intents) {
       title: intent.name,
       description: intent.description,
       image_url:
-        'https://pbs.twimg.com/profile_images/1235674864649830400/kd3pN6iU_400x400.jpg',
+        'https://res.cloudinary.com/dwfcofnrd/image/upload/q_auto/uniform-logo_tumfis.png',
       last_update: Date.now(),
       blob: {
         [intent.id]: {

@@ -19,3 +19,15 @@ export default {
   },
 }
 </script>
+
+<style>
+.hero {
+  border-radius: 2rem;
+  background: #dedede;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+</style>
