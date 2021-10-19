@@ -2,7 +2,7 @@
   <section class="bg-green-100 rounded-xl p-4">
     <h1 class="text-4xl">{{ data.title[0].text }}</h1>
     <p>{{ data.description[0].text }}</p>
-    <img :src="data.image.url" width="200" />
+    <img :src="`${data.image.url}&w=200`" width="200" />
   </section>
 </template>
 <script>

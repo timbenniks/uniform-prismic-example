@@ -23,6 +23,7 @@ export default {
       '@nuxtjs/prismic',
       {
         endpoint: 'https://uniform-integration.cdn.prismic.io/api/v2',
+        preview: false,
       },
     ],
     ['nuxt-sm'],
