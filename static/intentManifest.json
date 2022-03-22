@@ -23,9 +23,24 @@
             "str": 50
           }
         ]
+      },
+      {
+        "id": "cfp",
+        "signals": [
+          {
+            "type": "BEH",
+            "freq": "always",
+            "scope": "visitor",
+            "str": 75
+          }
+        ]
       }
     ],
-    "enrichments": [],
+    "enrichments": [
+      {
+        "name": "State"
+      }
+    ],
     "tests": []
   }
 }
